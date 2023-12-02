@@ -1,0 +1,14 @@
+[
+  {
+    "school" : "Western Governors University",
+    "major" : "Computer Science",
+    "type" : "Bachelor of Science",
+    "year" : "2019"
+  },
+  {
+    "school" : "Boston MET University",
+    "major" : "Software Development",
+    "type" : "Master of Science",
+    "year" : "2024"
+  }
+]
