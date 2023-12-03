@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+#tableContainer{
+    width: 45vw;
+
+}
+
+#fetchBtn{
+    width: 15vw;
+    align-self: center;
+    background-color: darkcyan;
+    border: 1px solid darkslategrey;
+    border-radius: 4px;
+    transition: margin-bottom .4s, box-shadow .4s;
+}
+
+#fetchBtn:hover{
+    margin-bottom: 10px;
+    box-shadow: 1em 1em 1em cadetblue;
+}
+
+
+table{
+    border-collapse: collapse;
+    border-radius: 0.75em 0.75em 0 0;
+    box-shadow: 1em 1em 1em cadetblue;
+    margin-bottom: 50px;
+    font-size: 1em;
+    width: 45vw;
+}
+
+td, th{
+    padding: 0.625em;
+    border: 1px solid;
+}
+
+tr{
+    transition: margin-bottom .4s, font-size .4s, font-weight .4s;
+
+}
+
+tr:not(:first-child):hover{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
