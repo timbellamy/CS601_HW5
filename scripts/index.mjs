@@ -5,6 +5,7 @@ const url = '/degrees.json';
 
 window.onload = () =>{
     addListener('fetchBtn', 'click', getDegreeData);
+    addListener('reset', 'click', reset)
 };
 
 const addListener = (id, type, exec) =>{
@@ -40,4 +41,6 @@ const addDegreeTable = (data) =>{
 const showError = (error) =>{
     console.log(error);
 }
+
+const reset = () => location.reload();
 

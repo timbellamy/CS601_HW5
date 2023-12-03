@@ -1,37 +1,67 @@
+:root{
+    --sand-tan: #e1b382;
+    --sand-tan-shadow: #c89666;
+    --night-blue: #2d545e;
+    --night-blue-shadow: #12343b;
+}
+
 body{
+    background-color: var(--sand-tan);
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.appContainer{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 60vh;
+    min-width: 75vw;
+    background-color: var(--night-blue-shadow);
+    box-shadow: 1em 1em 1em var(--night-blue);
 }
 #tableContainer{
     width: 45vw;
 
 }
 
-#fetchBtn{
+.btnGrp{
     width: 15vw;
     align-self: center;
-    background-color: darkcyan;
-    border: 1px solid darkslategrey;
-    border-radius: 4px;
-    transition: margin-bottom .4s, box-shadow .4s;
+    min-height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#fetchBtn:hover{
+#fetchBtn, #reset{
+    background-color: var(--sand-tan);
+    border: 1px solid darkslategrey;
+    border-radius: 10px;
+    transition: margin-bottom .4s, box-shadow .4s;
+    margin-left: 5px;
+    padding: 5px 20px 5px 20px;
+    font-size: 1.2rem;
+}
+
+#fetchBtn:hover, #reset:hover{
     margin-bottom: 10px;
-    box-shadow: 1em 1em 1em cadetblue;
+    box-shadow: 1em 1em 1em var(--sand-tan-shadow);
 }
 
 
 table{
     border-collapse: collapse;
-    border-radius: 0.75em 0.75em 0 0;
-    box-shadow: 1em 1em 1em cadetblue;
+    border-radius: 0.75em;
     margin-bottom: 50px;
     font-size: 1em;
     width: 45vw;
+    background-color: var(--sand-tan);
 }
 
 td, th{
@@ -40,7 +70,7 @@ td, th{
 }
 
 tr{
-    transition: margin-bottom .4s, font-size .4s, font-weight .4s;
+    transition: margin-bottom .4s, font-size .4s, font-weight .4s, box-shadow .4s;
 
 }
 
@@ -48,5 +78,7 @@ tr:not(:first-child):hover{
     margin-bottom: 15px;
     font-size: 1.2rem;
     font-weight: bolder;
+    box-shadow: 1em 1em 1em 8em var(--night-blue-shadow);
+
 }
 
